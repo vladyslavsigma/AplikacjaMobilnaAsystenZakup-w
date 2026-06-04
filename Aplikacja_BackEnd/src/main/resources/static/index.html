@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asystent Zakupów</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .store-info-window {
+            min-width: 200px;
+        }
+        .store-info-window h6 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .store-info-window p {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- React & Babel -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Twoje komponenty - KOLEJNOŚĆ JEST WAŻNA! -->
+<script src="js/components/Navbar.js" type="text/babel"></script>
+<script src="js/components/RegisterForm.js" type="text/babel"></script>
+<script src="js/components/LoginForm.js" type="text/babel"></script>
+<script src="js/components/ShoppingLists.js" type="text/babel"></script>
+<script src="js/components/ShoppingListDetail.js" type="text/babel"></script>
+<script src="js/components/StoreMap.js" type="text/babel"></script>
+<script src="js/components/StoreMapAdvanced.js" type="text/babel"></script> <!-- DODAJ TĘ LINIĘ! -->
+<script src="js/components/Dashboard.js" type="text/babel"></script>
+
+<!-- Główna aplikacja -->
+<script src="js/App.js" type="text/babel"></script>
+</body>
+</html>
